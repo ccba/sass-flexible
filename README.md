@@ -1,13 +1,14 @@
+
 # sass-flexible
-Provide sass mixins for rem compution on mobile and pc, and support multiple properties and multiple values of perperty.
-Introduction of rem flex refres to [lib-flexible](https://github.com/amfe/lib-flexible)
+Provide sass mixins for lib-flexible sulution, and support multiple properties and multiple values for perperty.
+Introduction of lib-flexible refres to [lib-flexible](https://github.com/amfe/lib-flexible)
 
 ## How to use
   at first, you shoud refer the js on the html page, download from [lib-flexible](https://github.com/amfe/lib-flexible)
 
 ### propertiesToRem mixin
 
-  Convert the px to rem for multiple properties and multiple values of perperty.
+  Convert the px to rem for multiple properties and multiple values for perperty.
 ```css
 @include propertiesToRem(".audience-count-info",  (width: 120px, height: 200px, margin:20px 30px 40px 12px)，75)
 ```
@@ -58,28 +59,4 @@ html[data-dpr="2"] p{
 html[data-dpr="3"] p{
   font-size:54px;
 }
-@media all and (min-device-width:1024px){
-   p{
-     font-size:36px}
-}
-```
-
-### pxsWithMedia minxin
-
-```css
-@include pxsWithMedia(".audience-count-info",(width: 120px, height: 200px, margin:20px 30px 40px 12px))
-```
-  result:
-```css
-@media all and (min-device-width:1024px){
-  .audience-count-info{
-    width:120px;
-    height:200px;
-    margin:20px 30px 40px 12px
-    }
-}
-```
-
-## License
-
-MIT
+@media all and (min-d
