@@ -3,14 +3,15 @@ Provide sass mixins for rem compution on mobile and pc, and support multiple pro
 Introduction of rem flex refres to [lib-flexible](https://github.com/amfe/lib-flexible)
 
 ## How to use
-at first, you shoud refer the js on the html page, download from [lib-flexible](https://github.com/amfe/lib-flexible)
+  at first, you shoud refer the js on the html page, download from [lib-flexible](https://github.com/amfe/lib-flexible)
 
-- propertiesToRem mixin
-Convert the px to rem for multiple properties and multiple values of perperty.
+### propertiesToRem mixin
+
+  Convert the px to rem for multiple properties and multiple values of perperty.
 ```css
 @include propertiesToRem(".audience-count-info",  (width: 120px, height: 200px, margin:20px 30px 40px 12px)，75)
 ```
-result:
+  result:
 ```css
 .audience-count-info{
    width:" 1.6rem";
@@ -19,15 +20,16 @@ result:
 }
 ```
 
-- pxToRem function
-Convert the px to rem by this function.
+### pxToRem function
+
+  Convert the px to rem by this function.
 ```css
 .audience-count-info
 {
   width:pxToRem(120px);
 }
 ```
-result:
+  result:
 ```css
 .audience-count-info
 {
@@ -35,13 +37,14 @@ result:
 }
 ```
 
-- fontSize mixin
-Generate the font size values base on the dpr.
+### fontSize mixin
+
+  Generate the font size values base on the dpr.
 
 ```css
 @include fontSize(36px, "p")
 ```
-result:
+  result:
 ```css
 html[data-dpr="1"] p
 {
@@ -61,12 +64,12 @@ html[data-dpr="3"] p{
 }
 ```
 
-- pxsWithMedia minxin
+### pxsWithMedia minxin
 
 ```css
 @include pxsWithMedia(".audience-count-info",(width: 120px, height: 200px, margin:20px 30px 40px 12px))
 ```
-result:
+  result:
 ```css
 @media all and (min-device-width:1024px){
   .audience-count-info{
